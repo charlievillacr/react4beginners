@@ -1,6 +1,6 @@
 <div id="root"></div>
-<script crossorigin src="https://unpkg.com/react@16.0.0-rc.3/umd/react.production.min.js"></script>
-<script crossorigin src="https://unpkg.com/react-dom@16.0.0-rc.3/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/react@16.0.0-rc.3/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@16.0.0-rc.3/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
 <script type="text/babel">
 const rootElement = document.getElementById('root')
@@ -17,13 +17,72 @@ const rootElement = document.getElementById('root')
 
 // In html you use class, in JSX you use className
 // Take Hello World and externalize it to a variable
-// Replace Hello World with an interpolation with {curlybraces}
+// Replace Hello World with an interpolation donoted with {curlybraces}
 // When you use curly braces your exits jsx and enter JavasScript, and you can do any javascript as long as it as an expression 
 
-const content = 'Hello World'
+// const content = 'HELLO WORLD'
 
 // Arrow function
-const element = <div className="container">{(() => content)()}</div>
+// const element = <div className="{container}">{(() => content)()}</div>
+
+// const myClassName = 'container'
+// const props = {
+//     className: 'container',
+//     children: 'Hello World',
+// }
+
+
+// const content = 'REACT 4 BEGINNERS'
+// const myClassName = 'container'
+// const props = {
+//     className: 'container',
+//     children: 'Hello World',
+// }
+// const element =
+//     <div {...props} />
+// const element = <div className="{myClassName + '__hi-there'}">{(() => content)()}</div>
 // console.log(element)
+// ReactDOM.render(element, rootElement)
+
+
+// const content = 'REACT 4 BEGINNERS'
+// const myClassName = 'container'
+// const props = {
+//     className: 'container',
+//     children: 'HelloWorld',
+// }
+// const element =  <div {...props} />
+// ReactDOM.render(element, rootElement)
+
+
+// const content = 'REACT 4 BEGINNERS'
+// const myClassName = 'container'
+// const props = {
+//     className: 'container',
+//     children: 'HelloWorld',
+// }
+// const element =  <div className="my-class"{...props}></div>
+// ReactDOM.render(element, rootElement)
+
+
+// const content = 'REACT 4 BEGINNERS'
+// const myClassName = 'container'
+// const props = {
+//     className: 'container',
+//     children: 'Hello World',
+// }
+// const element =  <div {...props}>Hi There</div>
+// ReactDOM.render(element, rootElement)
+
+
+const content = 'REACT 4 BEGINNERS'
+const myClassName = 'container'
+const props = {
+    className: 'container',
+    children: 'Hello World',
+}
+const element =  <div {...props} />
 ReactDOM.render(element, rootElement)
+
 </script>
+
