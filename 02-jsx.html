@@ -1,18 +1,21 @@
 <div id="root"></div>
 <script crossorigin src="https://unpkg.com/react@16.0.0-rc.3/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@16.0.0-rc.3/umd/react-dom.production.min.js"></script>
-<script type="text/javascript">
+<script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+<script type="text/babel">
 const rootElement = document.getElementById('root')
 // const element = document.createElement('div')
 // element.textContent = 'HELLO DANI'
 // element.className = 'container'
 // rootElement.appendChild(element)
 // https://egghead.io/lessons/react-create-html-elements-with-react-s-createelement-api
-const element = React.createElement(
-    'div', 
-    {className: 'container',
-    children: ['Hello Baby']}, 
-    )
+// const element = React.createElement(
+//     'div', 
+//     {className: 'container',
+//     children: ['Hello Baby']}, 
+//     )
+
+const element = <div className="container">Hola Amor :D</div>
 console.log(element)
 ReactDOM.render(element, rootElement)
 </script>
