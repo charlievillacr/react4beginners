@@ -15,7 +15,15 @@ const rootElement = document.getElementById('root')
 //     children: ['Hello Baby']}, 
 //     )
 
-const element = <div className="container">Hola Amor :D</div>
-console.log(element)
+// In html you use class, in JSX you use className
+// Take Hello World and externalize it to a variable
+// Replace Hello World with an interpolation with {curlybraces}
+// When you use curly braces your exits jsx and enter JavasScript, and you can do any javascript as long as it as an expression 
+
+const content = 'Hello World'
+
+// Arrow function
+const element = <div className="container">{(() => content)()}</div>
+// console.log(element)
 ReactDOM.render(element, rootElement)
 </script>
